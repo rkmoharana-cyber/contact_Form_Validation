@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="validation.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="#">
+            <i class="ri-send-plane-fill"></i>
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter Your Full Name" id="user-name">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="number">Phone no.</label>
+                <input type="tel" placeholder="1234567890" id="user-phone">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="Email">Email ID</label>
+                <input type="email" placeholder="Enter Your Email ID" id="user-email">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="Message">Your Message</label>
+                <textarea rows="5" placeholder="Enter Your Message" id="user-message"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+            <span id="submit-error"></span>
+        </form>    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
